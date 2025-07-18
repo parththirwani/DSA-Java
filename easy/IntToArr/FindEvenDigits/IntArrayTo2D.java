@@ -1,4 +1,4 @@
-package easy.IntToArr;
+package easy.IntToArr.FindEvenDigits;
 
 public class IntArrayTo2D {
     public static void main(String[] args) {

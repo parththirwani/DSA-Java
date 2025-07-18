@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Linear2DSearch {
     public static void main(String[] args) {
         int[][] arr= {
-            {1,2,3,4},
+            {2,1,3,4},
             {9,7,4},
             {15,29,36}
         };
