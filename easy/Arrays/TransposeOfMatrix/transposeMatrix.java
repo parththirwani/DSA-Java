@@ -16,17 +16,17 @@ public class transposeMatrix {
     }
 
     static int[][] transpose(int[][] mat) {
-        int rows = mat.length;
-        int cols = mat[0].length;
-        int[][] finalMat = new int[cols][rows];
 
         for (int row = 0; row < mat.length; row++) {
-            for (int col = 0; col < mat[row].length; col++) {
+            for (int col = row+1; col < mat[row].length; col++) {
 
-                finalMat[col][row] = mat[row][col];
+                int temp = mat[col][row];
+                mat[col][row] = mat[row][col];
+                mat[row][col] = temp;
             }
+
         }
-        return finalMat;
+        return mat;
 
     }
 
